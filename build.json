@@ -3,7 +3,5 @@
     "web",
     "wechat-miniprogram"
   ],
-  "plugins": [
-    "@ali/build-plugin-rax-app-def"
-  ]
+  "plugins": []
 }
