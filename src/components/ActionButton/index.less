@@ -1,0 +1,50 @@
+@inactive-color: #333;
+@active-color: rgb(51, 180, 235);
+
+.action-button {
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+  .icon {
+    font-size: 56rpx;
+    width: 84rpx;
+    height: 84rpx;
+    line-height: 84rpx;
+    border-radius: 50%;
+    background-color: @inactive-color;
+    color: #fff;
+  }
+
+  .text {
+    color: #333;
+  }
+}
+
+.action-button--active {
+  .icon {
+    background-color: @active-color;
+  }
+
+  .text {
+    color: @active-color;
+  }
+}
+
+.action-button--hoz {
+  flex-direction: column;
+
+  .text {
+    margin-top: 16rpx;
+    font-size: 24rpx;
+  }
+}
+
+.action-button--ver {
+  flex-direction: row;
+
+  .text {
+    margin-left: 16rpx;
+    font-size: 26rpx;
+  }
+}
