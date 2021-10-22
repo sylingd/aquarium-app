@@ -24,10 +24,10 @@ export default function Home() {
       </View>
       <View className="line">
         <Card>
-          <ActionButton align="ver" icon="touwei" text="投喂" />
+          <ActionButton align="hoz" icon="touwei" text="投喂" />
         </Card>
         <Card>
-          <ActionButton align="ver" icon="huanshui" text="换水" />
+          <ActionButton align="hoz" icon="huanshui" text="换水" />
         </Card>
       </View>
     </View>

@@ -14,7 +14,7 @@ interface ActionButtonProps {
 }
 
 const ActionButton: FC<ActionButtonProps> = (props) => {
-  const { icon, text, active, align = 'hoz', onClick } = props;
+  const { icon, text, active, align = 'ver', onClick } = props;
 
   return (
     <View
