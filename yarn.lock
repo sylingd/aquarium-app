@@ -1889,10 +1889,31 @@
     "@typescript-eslint/types" "4.33.0"
     eslint-visitor-keys "^2.0.0"
 
+"@uni/alert@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.npmmirror.com/@uni/alert/download/@uni/alert-1.0.8.tgz#7e016565c34d0d74fd3c2e721684f56f4b5f69d7"
+  integrity sha1-fgFlZcNNDXT9PC5yFoT1b0tfadc=
+  dependencies:
+    "@uni/confirm" "^1.0.3"
+
+"@uni/confirm@^1.0.3":
+  version "1.0.7"
+  resolved "https://registry.npmmirror.com/@uni/confirm/download/@uni/confirm-1.0.7.tgz#2cf4e95b05e03051a672e666600b872ea960aa1f"
+  integrity sha1-LPTpWwXgMFGmcuZmYAuHLqlgqh8=
+  dependencies:
+    "@uni/env" "^1.0.0"
+
 "@uni/env@^1.0.0":
   version "1.0.7"
   resolved "https://registry.nlark.com/@uni/env/download/@uni/env-1.0.7.tgz?cache=0&sync_timestamp=1626335236322&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40uni%2Fenv%2Fdownload%2F%40uni%2Fenv-1.0.7.tgz#eb6c36fbcaa45f88108038f68f1a3688cd0f2ba7"
   integrity sha1-62w2+8qkX4gQgDj2jxo2iM0PK6c=
+
+"@uni/request@^1.1.5":
+  version "1.1.5"
+  resolved "https://registry.npmmirror.com/@uni/request/download/@uni/request-1.1.5.tgz#99dacc59bd77687fbe6f045b30263a2401d1d7f4"
+  integrity sha1-mdrMWb13aH++bwRbMCY6JAHR1/Q=
+  dependencies:
+    "@uni/env" "^1.0.0"
 
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
