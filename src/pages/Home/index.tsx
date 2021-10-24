@@ -1,6 +1,7 @@
 import ActionButton from '@/components/ActionButton';
 import Card from '@/components/Card';
 import { api } from '@/utils/api';
+import { getPhText } from '@/utils/phCheck';
 import alert from '@uni/alert';
 import { createElement, useEffect, useState } from 'rax';
 import Text from 'rax-text';

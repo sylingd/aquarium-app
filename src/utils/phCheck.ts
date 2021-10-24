@@ -1,4 +1,4 @@
-const getPhText = (ph: string) => {
+export const getPhText = (ph: string) => {
   const num = parseFloat(ph);
 
   if (num < 7.4 && num > 6.5) {
