@@ -13,8 +13,11 @@
   },
   "dependencies": {
     "@uni/alert": "^1.0.8",
+    "@uni/loading": "^1.0.7",
     "@uni/request": "^1.1.5",
+    "@uni/toast": "^1.1.0",
     "classnames": "^2.3.1",
+    "querystring": "^0.2.1",
     "rax": "^1.1.0",
     "rax-document": "^0.1.0",
     "rax-image": "^2.0.0",
