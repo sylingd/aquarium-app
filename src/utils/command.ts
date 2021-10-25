@@ -5,7 +5,7 @@ import { api } from './api';
 import { sleep } from './utils';
 
 export const sendCommand = async (name: string, param: { id: string; command: string; param?: string }) => {
-  const url = '/app/command/execute?' + stringify(param);
+  const url = 'command/execute?' + stringify(param);
 
   showLoading({
     content: `正在${name}`,
@@ -16,7 +16,7 @@ export const sendCommand = async (name: string, param: { id: string; command: st
   let i = 0;
   while (i++ < 8) {
     await sleep(1000);
-    const t = await api(`/app/command/status?id=${res.id}`);
+    const t = await api(`command/status?id=${res.id}`);
     if (t.status === 'success') {
       hideLoading();
       showToast(`${name}完成`);
