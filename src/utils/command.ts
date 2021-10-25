@@ -20,12 +20,12 @@ export const sendCommand = async (name: string, param: { id: string; command: st
     if (t.status === 'success') {
       hideLoading();
       showToast(`${name}完成`);
-      break;
+      return;
     }
     if (t.status === 'error') {
       hideLoading();
       showToast(`${name}失败：${t.msg}`);
-      break;
+      return;
     }
   }
 
