@@ -1,5 +1,6 @@
 import ActionButton from '@/components/ActionButton';
 import Card from '@/components/Card';
+import TopSafeArea from '@/components/TopSafeArea';
 import { api } from '@/utils/api';
 import { sendCommand } from '@/utils/command';
 import { getPhText, getPhType, getTempType } from '@/utils/envCheck';
@@ -8,8 +9,8 @@ import classNames from 'classnames';
 import { createElement, useCallback, useEffect, useState } from 'rax';
 import Text from 'rax-text';
 import View from 'rax-view';
-import Tip from './tip';
 import './index.less';
+import Tip from './tip';
 
 const DEVICE_ID = '7afb16b8809ddb4de8049f66eed09a2a';
 
@@ -33,13 +34,13 @@ export default function Home() {
         ...newStatus,
         phText: getPhText(newStatus.ph),
         phType: getPhType(newStatus.ph),
-        temperatureType: getTempType(newStatus.temperatureType),
+        temperatureType: getTempType(newStatus.temperature),
       });
       if (newStatus.status !== lastStatus && newStatus.status === 'offline') {
         showToast('设备离线');
       }
       lastStatus = newStatus.status;
-      timer = setTimeout(check, 2000);
+      timer = setTimeout(check, 3000);
     }
 
     check();
@@ -54,7 +55,7 @@ export default function Home() {
 
   const handleFeed = useCallback(
     () =>
-      sendCommand('喂食', {
+      sendCommand('投喂', {
         id: DEVICE_ID,
         command: 'feed',
       }),
@@ -77,6 +78,7 @@ export default function Home() {
         'status-offline': status.status === 'offline',
       })}
     >
+      <TopSafeArea />
       <View className="top-section">
         <Text className="title">温度</Text>
         <View className="main">
